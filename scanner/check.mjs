@@ -7,7 +7,7 @@
 
 const AI_BOTS = ['GPTBot', 'ClaudeBot', 'PerplexityBot', 'Google-Extended', 'CCBot', 'OAI-SearchBot'];
 const TIMEOUT_MS = 15000;
-const UA = 'Mozilla/5.0 (compatible; geo-scanner/1.0; +https://github.com/locagoi/content-engineering-skills)';
+const UA = 'Mozilla/5.0 (compatible; geo-scanner/1.0; +https://github.com/locagoi/ai-search-loop)';
 
 function normalize(input) {
   let u = (input || 'example.com').trim();

@@ -99,7 +99,7 @@ the graphic" is how a claim gets approved in prose and contradicted in the pictu
 *The exception is the refresh class below, which carries no new claim.*
 
 ### 3 — Publish
-**Due when** a piece has passed gate 2. Merge, deploy, request indexing, schedule the social
+**Due when** a piece has passed gate 2. Merge, deploy, request indexing, schedule any follow-up
 slots, and write the live URL back into the state record.
 
 ### 4 — Report

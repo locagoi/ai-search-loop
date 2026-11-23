@@ -7,7 +7,7 @@ description: Scan a website for AI-friendliness (GEO). Runs 30 checks and report
 Run the bundled scanner against the domain in `$ARGUMENTS` (default `example.com`). The scanner has **no dependencies** — Node 18+ with built-in `fetch`.
 
 ```
-NODE_OPTIONS=--use-system-ca node "$PROJECTS_DIR/content-engineering-skills/scanner/check.mjs" $ARGUMENTS
+NODE_OPTIONS=--use-system-ca node "$PROJECTS_DIR/ai-search-loop/scanner/check.mjs" $ARGUMENTS
 ```
 
 > `NODE_OPTIONS=--use-system-ca` is only needed behind a TLS-inspecting proxy/antivirus (otherwise `fetch` fails with "unable to verify the first certificate"). Drop it otherwise.

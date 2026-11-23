@@ -30,7 +30,7 @@ done
 
 echo ""
 echo "Done. $count skills installed in $TARGET_DIR (mode: $MODE)."
-echo "Set PROJECTS_DIR and clone this repo to \$PROJECTS_DIR/content-engineering-skills so skills find the bundled scripts."
+echo "Set PROJECTS_DIR and clone this repo to \$PROJECTS_DIR/ai-search-loop so skills find the bundled scripts."
 echo ""
 echo "Then put your own values OUTSIDE this repo and point CONTENT_CONFIG_DIR at them:"
 echo "  mkdir -p ~/my-content-config"

@@ -1,5 +1,5 @@
 {
-  "name": "geo-toolkit",
+  "name": "ai-search-loop",
   "version": "1.0.0",
   "description": "Self-contained GEO (Generative Engine Optimization) toolkit for Claude Code: scan, analytics, citation tracking, content gaps, and measurement.",
   "type": "module",

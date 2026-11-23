@@ -191,8 +191,8 @@ dieser Liste ist kein Artikel-Kandidat, egal wie gut das Suchvolumen aussieht.
 Bevorzugte Eingabe ist der **gemergte Backlog** aus dem `gaps`-Schritt (`/geo` Schritt 4) — er kombiniert Search-Demand (GSC/GA4 via `/demand`) mit AI-Citation-Gaps (`/ai-visibility`):
 
 ```bash
-LATEST=$(ls "$PROJECTS_DIR/content-engineering-skills/geo/runs/" | grep '^backlog-' | sort | tail -1)
-cat "$PROJECTS_DIR/content-engineering-skills/geo/runs/$LATEST"
+LATEST=$(ls "$PROJECTS_DIR/ai-search-loop/geo/runs/" | grep '^backlog-' | sort | tail -1)
+cat "$PROJECTS_DIR/ai-search-loop/geo/runs/$LATEST"
 ```
 
 **Nutze den Backlog so:**
