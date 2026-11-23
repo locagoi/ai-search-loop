@@ -1,8 +1,31 @@
-# geo-toolkit
+# ai-search-loop
 
-[![test](https://github.com/locagoi/content-engineering-skills/actions/workflows/test.yml/badge.svg)](https://github.com/locagoi/content-engineering-skills/actions/workflows/test.yml)
+[![test](https://github.com/locagoi/ai-search-loop/actions/workflows/test.yml/badge.svg)](https://github.com/locagoi/ai-search-loop/actions/workflows/test.yml)
 
-A self-contained **content-engineering** toolkit for [Claude Code](https://claude.com/claude-code): run content as an unattended loop, and get your site **surfaced and cited by AI answer engines** (ChatGPT, Perplexity, Google AI Overviews, Claude) — not just ranked in classic search.
+**Find the questions buyers ask AI engines and search, check whether your site is cited, and write the page that closes each gap. Runs weekly as a loop inside [Claude Code](https://claude.com/claude-code).**
+
+## What you get
+
+- **Audit:** a 30-check AI-friendliness scan for any site, with a score and ranked fixes (no key, no dependencies).
+- **Measurement:** citation rate per AI engine, with a sensor-health check (a dead lane marks the run untrustworthy).
+- **Backlog:** search demand (Search Console, GA4, Clarity) merged with citation gaps into one ranked list.
+- **Content:** a data-rich, citable article draft per gap, with a human gate before anything is published.
+
+## The loop
+
+```
+Goal: be cited on the buyer questions that matter
+  -> Agent audits your site, pulls demand, measures citations
+  -> Agent writes the page for the top gap   (human gate: review the rendered piece)
+  -> Measure again (citation delta; report three runs, median)
+  -> Learn: amplify the clusters that get cited, drop the rest -> next version
+```
+
+## Start in 3 steps
+
+1. Clone the repo and run `node scanner/check.mjs yoursite.com` (score plus ranked fixes).
+2. Run `./setup.sh` to install the skills; copy `longtail.config.example.json` to a folder outside the repo (see below).
+3. Schedule `/geo full` weekly (cron or `/schedule`).
 
 Two loops, one repo:
 
@@ -34,8 +57,8 @@ Two loops, one repo:
 ## Quick start (zero setup — the scanner needs no key, no deps)
 
 ```bash
-git clone https://github.com/locagoi/content-engineering-skills.git
-cd content-engineering-skills
+git clone https://github.com/locagoi/ai-search-loop.git
+cd ai-search-loop
 node scanner/check.mjs stripe.com        # → Score: 87/100 (Good) + ranked fixes
 npm test                                 # → unit tests for the GEO helpers
 ```
@@ -52,7 +75,7 @@ npm test                                 # → unit tests for the GEO helpers
 Then: `/pipeline auto` for the full loop, `/geo full` for just the GEO half, or step by step
 `/ideation`, `/scan`, `/demand`, `/ai-visibility`, `/longtail`.
 
-Set `PROJECTS_DIR` and clone into `$PROJECTS_DIR/content-engineering-skills` so the skills find the bundled scripts:
+Set `PROJECTS_DIR` and clone into `$PROJECTS_DIR/ai-search-loop` so the skills find the bundled scripts:
 ```bash
 export PROJECTS_DIR="$HOME/Projects"     # macOS/Linux  (Windows: setx PROJECTS_DIR "%USERPROFILE%\Projects")
 ```

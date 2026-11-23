@@ -21,7 +21,7 @@ Measures how often AI engines cite **your** domain for the buyer questions you c
 ## Run
 
 ```
-OPENROUTER_API_KEY=... NODE_OPTIONS=--use-system-ca node "$PROJECTS_DIR/content-engineering-skills/geo/citation-check.mjs" $ARGUMENTS
+OPENROUTER_API_KEY=... NODE_OPTIONS=--use-system-ca node "$PROJECTS_DIR/ai-search-loop/geo/citation-check.mjs" $ARGUMENTS
 ```
 
 > `NODE_OPTIONS=--use-system-ca` only matters behind a TLS-inspecting proxy.

@@ -10,7 +10,7 @@ Drives the whole loop so a site grows its AI-search visibility continuously: **a
 
 ## The loop
 
-All paths are under `$PROJECTS_DIR/content-engineering-skills`. Prefix Node calls with `NODE_OPTIONS=--use-system-ca` only behind a TLS-inspecting proxy.
+All paths are under `$PROJECTS_DIR/ai-search-loop`. Prefix Node calls with `NODE_OPTIONS=--use-system-ca` only behind a TLS-inspecting proxy.
 
 ### 1. Audit & fix (technical GEO)
 ```

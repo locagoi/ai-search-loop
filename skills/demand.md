@@ -15,7 +15,7 @@ Answers "what are people actually interested in, and where am I weak?" by combin
 ## Run
 
 ```
-NODE_OPTIONS=--use-system-ca node "$PROJECTS_DIR/content-engineering-skills/geo/demand.mjs" $ARGUMENTS
+NODE_OPTIONS=--use-system-ca node "$PROJECTS_DIR/ai-search-loop/geo/demand.mjs" $ARGUMENTS
 ```
 (`--days 28` by default. `NODE_OPTIONS` only needed behind a TLS-inspecting proxy.)
 
@@ -33,4 +33,4 @@ Read the saved `geo/runs/demand-<ts>.json` and present:
 
 ## Next
 
-`node "$PROJECTS_DIR/content-engineering-skills/geo/gaps.mjs"` merges this with the latest `/ai-visibility` run into a ranked backlog → `/longtail` writes the top items.
+`node "$PROJECTS_DIR/ai-search-loop/geo/gaps.mjs"` merges this with the latest `/ai-visibility` run into a ranked backlog → `/longtail` writes the top items.
